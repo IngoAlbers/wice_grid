@@ -293,13 +293,13 @@ setupMultiSelectToggle = (wiceGridContainer)->
 
 setupBulkToggleForActionColumn = (wiceGridContainer) ->
   $('.select-all', wiceGridContainer).click ->
-    $('.sel input', wiceGridContainer).prop('checked', true).trigger('change')
+    $('.sel input', wiceGridContainer).prop('checked', true)
 
   $('.deselect-all', wiceGridContainer).click ->
-    $('.sel input', wiceGridContainer).prop('checked', false).trigger('change')
+    $('.sel input', wiceGridContainer).prop('checked', false)
 
   $('.wg-select-all', wiceGridContainer).click ->
-    $('.sel input', wiceGridContainer).prop('checked', $(this).prop('checked')).trigger('change')
+    $('.sel input', wiceGridContainer).prop('checked', $(this).prop('checked'))
 
 
 getGridProcessorForElement = (element) ->
